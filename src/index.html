@@ -23,12 +23,39 @@
   </header>
 
   <!-- Hero Section -->
-  <section id="home" class="text-center py-20 bg-cyan-600 reveal-left">
-    <h2 class="text-3xl font-bold mb-4">Hi, I'm Amna Bibi</h2>
-    <p class="text-lg mb-6">A Frontend and wordPress Developer</p>
-    <a href="#projects" class="bg-cyan-100 text-black px-6 py-2 rounded hover:bg-cyan-200 font-bold transition">View Projects</a>
-        
-  </section>
+  <section
+  id="home"
+  class="flex justify-center items-center text-right min-h-screen bg-[url('heros.jpg')] bg-cover bg-no-repeat bg-fixed relative text-white px-10"
+>
+  <div class="bg-black/50 p-10 rounded-md w-full sm:w-1/2 animate-fade-in">
+    <h2 class="text-4xl sm:text-5xl font-bold mb-4 text-center">Hi, I'm Amna Bibi</h2>
+    <p class="text-lg sm:text-xl mb-6 text-center">A Frontend and WordPress Developer</p>
+
+    <!-- Action Buttons -->
+    <div class="flex flex-col flex-wrap sm:flex-row sm:justify-center sm:items-center gap-4">
+      <a
+        href="#projects"
+        class="bg-cyan-100 text-black px-6 py-3 rounded hover:bg-cyan-200 font-bold transition duration-300"
+      >
+        View Projects
+      </a>
+      <a
+        href="#contact"
+        class="bg-transparent border border-white px-6 py-3 rounded hover:bg-white hover:text-black font-bold transition duration-300"
+      >
+        Contact Me
+      </a>
+      <a
+        href="Resume.pdf"
+        download
+        class="bg-green-500 px-6 py-3 rounded text-white hover:bg-green-600 font-bold transition duration-300"
+      >
+        Download Resume
+      </a>
+    </div>
+  </div>
+</section>
+
 
   <!-- Skills Section -->
 <section id="skills" class="py-16 bg-cyan-50 reveal" >
@@ -123,8 +150,8 @@
   </section>
 
   <!-- Footer -->
-  <footer class="bg-gray-800 text-white text-center py-4">
-    <p>© 2025 Amna Bibi | All rights reserved</p>
+  <footer class="bg-gray-800 text-white text-center py-4 reveal">
+    <p>© 2025 Amna Bibi | Web Developer | All rights reserved</p>
   </footer>
 
  <script>
