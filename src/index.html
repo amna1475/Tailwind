@@ -8,9 +8,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body class="bg-white-50 text-gray-800">
-
   <!-- Navbar -->
-  <header class="bg-cyan-50 shadow-md sticky top-0 z-50">
+  <header class="bg-gray-50 shadow-md sticky top-0 z-50">
     <div class="container mx-auto px-4 py-4 flex justify-between items-center">
       <h1 class="text-xl font-bold">Amna's Portfolio</h1>
       <nav class="space-x-4">
@@ -27,38 +26,23 @@
   id="home"
   class="flex justify-center items-center text-right min-h-screen bg-[url('heros.jpg')] bg-cover bg-no-repeat bg-fixed relative text-white px-10"
 >
-  <div class="bg-black/50 p-10 rounded-md w-full sm:w-1/2 animate-fade-in">
-    <h2 class="text-4xl sm:text-5xl font-bold mb-4 text-center">Hi, I'm Amna Bibi</h2>
-    <p class="text-lg sm:text-xl mb-6 text-center">A Frontend and WordPress Developer</p>
+  <div class="bg-black/50 p-10 rounded-md w-full sm:w-1/2 animate-fade-in reveal">
+    <h2 class="text-4xl sm:text-5xl font-bold mb-4 text-center reveal-left">Hi, I'm Amna Bibi</h2>
+    <p class="text-lg sm:text-xl mb-6 text-center reveal-left">A Frontend and WordPress Developer</p>
 
     <!-- Action Buttons -->
-    <div class="flex flex-col flex-wrap sm:flex-row sm:justify-center sm:items-center gap-4">
-      <a
-        href="#projects"
-        class="bg-cyan-100 text-black px-6 py-3 rounded hover:bg-cyan-200 font-bold transition duration-300"
-      >
-        View Projects
-      </a>
-      <a
-        href="#contact"
-        class="bg-transparent border border-white px-6 py-3 rounded hover:bg-white hover:text-black font-bold transition duration-300"
-      >
-        Contact Me
-      </a>
-      <a
-        href="Resume.pdf"
-        download
-        class="bg-green-500 px-6 py-3 rounded text-white hover:bg-green-600 font-bold transition duration-300"
-      >
-        Download Resume
-      </a>
+    <div class="flex flex-col flex-wrap sm:flex-row sm:justify-center sm:items-center gap-4 reveal-left">
+      <a href="#projects" class="bg-cyan-100 text-black px-6 py-3 rounded hover:bg-cyan-200 font-bold transition duration-300 hover:scale-105" >
+        View Projects</a>
+      <a href="#contact" class="bg-transparent border border-white px-6 py-3 rounded hover:bg-white hover:text-black font-bold transition duration-300 hover:scale-105">Contact Me</a>
+      <a href="Resume.pdf" download class="bg-green-500 px-6 py-3 rounded text-white hover:bg-green-600 font-bold transition duration-300 hover:scale-105"> Download Resume</a>
     </div>
   </div>
 </section>
 
 
   <!-- Skills Section -->
-<section id="skills" class="py-16 bg-cyan-50 reveal" >
+<section id="skills" class="py-16 bg-gray-50 reveal" >
   <div class="container mx-auto px-4">
     <h3 class="text-2xl font-bold mb-8 text-center">My Skills</h3>
     <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center ">
@@ -112,48 +96,99 @@
 
 
   <!-- Projects Section -->
-  <section id="projects" class="py-16 bg-blue-100 reveal">
+  <section id="projects" class="flex justify-center items-center text-right min-h-screen bg-[url('img3.avif')] bg-cover bg-no-repeat bg-fixed relative px-10 py-16 bg-blue-100 reveal-left">
   <div class="container mx-auto px-4">
-    <h3 class="text-2xl font-bold mb-8 text-center">Projects</h3>
+    <h3 class="text-2xl font-bold mb-8 text-white text-center">Projects</h3>
     <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
       
       <div class="bg-white p-4 rounded shadow">
         <h4 class="font-semibold text-lg text-center">Restaurant Website</h4>
         <p class="text-sm mt-2 text-center">Developed a full-featured responsive website for a restaurant with online booking and menu system.</p>
         <p class="text-center"><strong>Tech Used:</strong> HTML, CSS, JS</p>
-        <a href="#" class="text-blue-600 text-sm mt-2 block text-center">View Project</a>
+        <a href="https://github.com/amna1475/Restaurant-App" class="text-blue-600 text-sm mt-2 block text-center">View Project</a>
       </div>
       
       <div class="bg-white p-4 rounded shadow">
-        <h4 class="font-semibold text-lg text-center">Project 2</h4>
-        <p class="text-sm mt-2 text-center">Description of the project goes here.</p>
-        <a href="#" class="text-blue-600 text-sm mt-2 block text-center">View Project</a>
+        <h4 class="font-semibold text-lg text-center">Naturify</h4>
+        <p class="text-center">Built a clean, responsive website to promote nature awareness using static HTML and CSS.</p><br>
+        <p class="text-center"><strong>Tech:</strong> HTML5, CSS3</p>
+        <a href="#" class="text-blue-600 text-sm mt-2 block text-center">Live Demo</a>
       </div>
       
-      <!-- Add more projects here -->
+      <div class="bg-white p-4 rounded shadow">
+        <h4 class="font-semibold text-lg text-center">Minesweeper</h4>
+        <p class="text-center">Developed a functional Minesweeper game in Java with a GUI using Swing Based on user's difficulty level</p><br>
+        <p class="text-center"><strong>Tech:</strong> Java</p>
+        <a href="https://github.com/amna1475/MineSweeper" class="text-blue-600 text-sm mt-2 block text-center">View Code</a>
+      </div>
 
+      <div class="bg-white p-4 rounded shadow">
+        <h4 class="font-semibold text-lg text-center">Tic Tac Toe_ Player Vs PC</h4>
+        <p class="text-center">Implemented a simple terminal-based Tic Tac Toe game in Python with AI for single-player mode.</p><br>
+        <p class="text-center"><strong>Tech:</strong> Python</p>
+        <a href="https://github.com/amna1475/Smart-Tac-Toe-Player-vs-PC-in-Python" class="text-blue-600 text-sm mt-2 block text-center">View Code</a>
+      </div>
+
+      <div class="bg-white p-4 rounded shadow">
+        <h4 class="font-semibold text-lg text-center">Tic Tac Toe</h4>
+        <p class="text-center">Implemented a simple terminal-based Tic Tac Toe game in Python for two players game.</p><br>
+        <p class="text-center"><strong>Tech:</strong> Python</p>
+        <a href="https://github.com/amna1475/TicTacToe_TwoPlayersgame" class="text-blue-600 text-sm mt-2 block text-center">View Code</a>
+      </div>
+
+      <div class="bg-white p-4 rounded shadow">
+        <h4 class="font-semibold text-lg text-center">School Management System</h4>
+        <p class="text-center">Created a Java application to manage student records, attendance, and grades with file handling.</p><br>
+        <p class="text-center"><strong>Tech:</strong> Java</p>
+        <a href="https://github.com/amna1475/SchoolManagementSystem" class="text-blue-600 text-sm mt-2 block text-center">View Code</a>
+      </div>
+
+       <div class="bg-white p-4 rounded shadow">
+        <h4 class="font-semibold text-lg text-center">Social Media (Database)</h4>
+        <p class="text-center">Built a NoSQL MongoDB-based schema for a social media app with JSON prototypes and queries.</p><br>
+        <p class="text-center"><strong>Tech:</strong> MongoDB Atlas + Compass</p>
+        <a href="https://github.com/amna1475/SocialMediaProject" target="_blank" class="text-blue-600 text-sm mt-2 block text-center">View Code</a>
+      </div>
+
+      <div class="bg-white p-4 rounded shadow">
+        <h4 class="font-semibold text-lg text-center">Social Media (C++)</h4>
+        <p class="text-center">Simulated social media functionalities like post, comment, follow using data structures. </p><br>
+        <p class="text-center"><strong>Tech:</strong> C++</p>
+        <a href="https://github.com/amna1475/SociaStruct" target="_blank" class="text-blue-600 text-sm mt-2 block text-center">View Code</a>
+      </div>
     </div>
   </div>
 </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="py-16 bg-white reveal-left">
-    <div class="container mx-auto px-4 max-w-xl">
-      <h3 class="text-2xl font-bold mb-8 text-center">Contact Me</h3>
-      <form class="space-y-4">
-        <input type="text" placeholder="Your Name" class="w-full p-3 border rounded" />
-        <input type="email" placeholder="Your Email" class="w-full p-3 border rounded" />
-        <textarea placeholder="Your Message" rows="5" class="w-full p-3 border rounded"></textarea>
-        <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">Send</button>
-      </form>
+<section id="contact" class="py-16 bg-white reveal">
+  <div class="container mx-auto px-4 max-w-xl">
+    <h3 class="text-2xl font-bold mb-8 text-center">Contact Me</h3>
+    <form class="space-y-4">
+      <input type="text" placeholder="Your Name" class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-400 transition duration-300" />
+      <input type="email" placeholder="Your Email" class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-400 transition duration-300" />
+      <textarea placeholder="Your Message" rows="5" class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-400 transition duration-300"></textarea>
+      <button type="submit" class="bg-gray-700 text-white px-6 py-2 rounded hover:bg-gray-600 hover:scale-105 transition-all duration-300">Send</button>
+    </form>
+    <!-- Icons -->
+    <div class="mt-10 flex justify-center gap-8 text-3xl">
+      <a href="https://github.com/amna1475" target="_blank" aria-label="GitHub Profile" class="text-gray-700 hover:text-black hover:scale-125 transition-transform duration-300">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/amna-bibi-5a82a62b3/" target="_blank" aria-label="LinkedIn Profile" class="text-blue-600 hover:text-blue-800 hover:scale-125 transition-transform duration-300">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="mailto:amna.sparish@gmail.com" aria-label="Email" class="text-red-600 hover:text-red-800 hover:scale-125 transition-transform duration-300">
+        <i class="fas fa-envelope"></i>
+      </a>
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- Footer -->
-  <footer class="bg-gray-800 text-white text-center py-4 reveal">
+  <footer class="bg-gray-800 text-white text-center py-4 reveal-left">
     <p>© 2025 Amna Bibi | Web Developer | All rights reserved</p>
   </footer>
-
  <script>
   document.addEventListener("DOMContentLoaded", () => {
     const fadeUpObserver = new IntersectionObserver(entries => {
@@ -169,7 +204,6 @@
       el.classList.add("opacity-0", "translate-y-10", "transition-all", "duration-700");
       fadeUpObserver.observe(el);
     });
-
     const fadeLeftObserver = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -178,16 +212,12 @@
         }
       });
     }, { threshold: 0.1 });
-
     document.querySelectorAll(".reveal-left").forEach(el => {
       el.classList.add("opacity-0", "-translate-x-10", "transition-all", "duration-700");
       fadeLeftObserver.observe(el);
     });
   });
 </script>
-
-
-
 </body>
 </html>
 
